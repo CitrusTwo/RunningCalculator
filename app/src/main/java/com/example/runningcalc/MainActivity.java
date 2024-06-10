@@ -74,7 +74,6 @@ public class MainActivity extends AppCompatActivity {
                 double timeLynbrook = timeCrystal * 0.637;
                 double timeBaylands = timeCrystal * 1.01;
 
-
                 String equivalentTimes = "Race Predictor:" + "\n" +
                         "800m: " + formatSecondsToMMSS(time800m) + "\n" +
                         "1600m: " + formatSecondsToMMSS(time1600m) + "\n" +
@@ -92,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
                 double easyPaceMax = time1600m * 1.59;
                 double tempoPaceMin = time1600m * 1.28;
                 double tempoPaceMax = time1600m * 1.33;
-                double thresholdPaceMin = time1600m * 1.17;
+                double thresholdPaceMin = time1600m * 1.18;
                 double thresholdPaceMax = time1600m * 1.23;
                 double intervalPace = time1600m * 1.075;
                 double interval400Pace = intervalPace / 4.02335;
