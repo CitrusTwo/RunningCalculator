@@ -87,20 +87,20 @@ public class MainActivity extends AppCompatActivity {
                 textView2.setText(equivalentTimes);
 
                 // Calculate Easy Training Pace range
-                double easyPaceMin = time1600m * 1.39;
-                double easyPaceMax = time1600m * 1.59;
-                double tempoPaceMin = time1600m * 1.28;
-                double tempoPaceMax = time1600m * 1.33;
-                double thresholdPaceMin = time1600m * 1.18;
-                double thresholdPaceMax = time1600m * 1.23;
-                double intervalPace = time1600m * 1.075;
+                double easyPaceMin = time1600m * 1.36;
+                double easyPaceMax = time1600m * 1.57;
+                double tempoPaceMin = time1600m * 1.22;
+                double tempoPaceMax = time1600m * 1.35;
+                double thresholdPaceMin = time1600m * 1.14;
+                double thresholdPaceMax = time1600m * 1.21;
+                double intervalPace = time1600m * 1.07;
                 double interval400Pace = intervalPace / 4.02335;
 
                 String trainingPace = "Training Paces:" + "\n" +
                         "Easy Run: " + formatSecondsToMMSS(easyPaceMin) + " - " + formatSecondsToMMSS(easyPaceMax) + "\n" +
                         "Tempo: " + formatSecondsToMMSS(tempoPaceMin) + " - " + formatSecondsToMMSS(tempoPaceMax) + "\n" +
                         "Threshold: " + formatSecondsToMMSS(thresholdPaceMin) + " - " + formatSecondsToMMSS(thresholdPaceMax) + "\n" +
-                        "Interval: " + formatSecondsToMMSS(intervalPace) + " " + "(per 400: " + formatSecondsToMMSS(interval400Pace) + ")";
+                        "VO2 Max: " + formatSecondsToMMSS(intervalPace) + " " + "(per 400: " + formatSecondsToMMSS(interval400Pace) + ")";
 
                 // Update textView3 with the training paces
                 textView3.setText(trainingPace);
